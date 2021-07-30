@@ -7,10 +7,14 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] arr1 = {1, 2, 3};
+            int[] arr1 = { 2, 5, 3, 0, 2, 3, 0, 3 };
             int[] arr2 = {4, 5, };
 
-            Console.WriteLine(FindMedianSortedArrays.resolve(arr1, arr2));
+            MergerSort.resolve(arr1);
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                Console.WriteLine((arr1[i]));
+            }
         }
     }
 }
